@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<script type='text/javascript' src="js/jquery.min.js"></script>
+    <script type='text/javascript' src="js/bootstrap.min.js"></script>
+	<!-- 如果元素中的内容超出了给定的宽度和高度属性，overflow 属性可以确定是否显示滚动条等行为。 -->
+	
+  </head>
+  
+ <body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<label for="InputFileOne"class="navbar-brand">导入文件</label>
+				<input type="file" id="InputFileOne" class="navbar-brand">
+				<p class="navbar-brand">Coefficient</p>
+				<label for="InputFileTwo" class="navbar-brand">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;导入文件</label>
+				<input type="file" class="navbar-brand" id="InputFileTwo">
+
+			</div>
+		</div>
+	</nav>
+ 
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<!--
+			<div class="col-md-2">
+				<button class="btn btn-success">Button</button>				<p></p>
+				<div style="overflow-y:scroll; height:500px;">
+					<div class="list-group">
+					  <a href="#" class="list-group-item active">
+						<h4 class="list-group-item-heading">张三</h4>
+						<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+					  </a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">李四</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">王五</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">小六</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">小七</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">张三</h4>
+						<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+					  </a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">李四</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">王五</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">小六</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">小七</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			-->
+			<!-- end left sidebar-->
+			<div class="col-md-6">
+				<h4>Coefficient is: <span class="label label-success">New</span></h4>
+				<div class="jumbotron">
+				  <h1>这里放d3的画板</h1>
+				  <p>...</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h4>Coefficient is: <span class="label label-success">New</span></h4>
+				<div class="jumbotron">
+				  <h1>这里放d3的画板</h1>
+				  <p>...</p>
+				</div>
+			</div>
+			<!--
+			<div class="col-md-2">
+				<button class="btn btn-success">Button</button>
+				<p></p>
+				<div style="overflow-y:scroll; height:500px;">
+					<div class="list-group">
+					  <a href="#" class="list-group-item active">
+						<h4 class="list-group-item-heading">张三</h4>
+						<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+					  </a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">李四</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">王五</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">小六</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">小七</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">张三</h4>
+						<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+					  </a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">李四</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">王五</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">小六</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">小七</h4>
+							<p class="list-group-item-text">计算机学院 爱好：运动  人气：100</p>
+						</a>
+					</div>
+				</div>
+				-->
+				<!-- end right sidebar-->
+			</div>
+		
+		</div>
+	</div>
+ </body>
+ </html>
