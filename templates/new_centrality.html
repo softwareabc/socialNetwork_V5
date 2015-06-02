@@ -81,7 +81,7 @@
 				  //var category = $('#category_shows').text();
 				  var searchID = $('#input_id').val();
 				  //console.log(category);
-				  alert("/centrality/"+flag);
+				  //alert("/centrality/"+flag);
 
 
 				  $.post("/centrality/"+flag,
@@ -89,9 +89,9 @@
 				  	    search:searchID
 				  	},
 				  	function(data,status){
-				  		alert("ok");
-				  		alert(data);
-						console.log(data);
+				  		//alert("ok");
+				  		//alert(data);
+						//console.log(data);
 					}
 				 );
 			  });

@@ -35,7 +35,7 @@ def index():
     return render_template('main.html')
 
 
-@app.route('/centrality/<int(min=1, max=5):req_id>', methods=['POST', 'GET'])
+@app.route('/centrality/<int(min=0, max=5):req_id>', methods=['POST', 'GET'])
 def top_students(req_id):
     '''
     处理名人推荐、学院搜索
@@ -52,7 +52,15 @@ def top_students(req_id):
 
     paramas = request.form
 
-    if req_id == 1:  # 请求全校学生节点中心度值
+    if req_id == 0:  # 请求全校学生节点中心度值
+
+        #ig_list = c.centrality_calculation_by_igraph(G_igraph)
+        #nx_list = c.centrality_calculation_by_networkx(G_nx)
+
+        #data = ig_list + nx_list  # 根据请求返回需要的对应格式的数据
+
+        return render_template('new_centrality.html')
+    elif req_id == 1:  # 请求全校学生节点中心度值
 
         ig_list = c.centrality_calculation_by_igraph(G_igraph)
         nx_list = c.centrality_calculation_by_networkx(G_nx)
